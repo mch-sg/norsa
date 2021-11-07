@@ -1,5 +1,68 @@
+/*      PRIMARY ATTRIBUTES      */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 8%;
+    line-height: 1.5;
+    max-width: 500px;
+} p, h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-items: center;
+
+}
+
+
+
+/*      TYPOGRAPHY      */
 
 .text {
     font-family: 'Inter';
     font-size: 16px;
+}
+
+
+
+/*      FLEXBOX       */
+
+.flexbox-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    background-color: black;;
+    justify-content: center;
+}
+
+.flexbox-item {
+    width: 95%;
+    border: 0.1px solid rgb(39, 39, 39);
+    border-radius: 25px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+    margin: 150px 75px 150px 150px;
+
+}
+
+.flexbox-item-2 {
+    min-height: 100px;
+    margin: 150px 150px 150px 75px;
+
 }
