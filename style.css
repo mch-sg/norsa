@@ -1,15 +1,22 @@
+
+
 /*      PRIMARY ATTRIBUTES      */
 
+:root {
+    --div-background-color: black;
+}
+ 
+
 body {
-    background-color: black;
+    background-color: var(--div-background-color, black);
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inconsolata', monospace;
+
     margin-top: 100px;
     margin-left: 100px;
     margin-right: 8%;
-    line-height: 1.5;
-    max-width: 500px;
-} p, h2 {
+    max-width: 500px; 
+} p {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -20,44 +27,108 @@ body {
 
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+h1 {
+    font-family: 'Lato', sans-serif; 
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+} h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 1px;
+} h3 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(39, 39, 39);
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background: white;
+    opacity: 0;
+  }
+  
 
 
 /*      TYPOGRAPHY      */
 
 .text {
-    font-family: 'Inter';
-    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
+.link {
+   /* color: rgb(175, 175, 175); */
+    color: #f5978e; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+.link:hover {
+    /*color: #f5978e;  #929da6*/
+    color: #bb6a63;
+}
 
 
 /*      FLEXBOX       */
 
 .flexbox-container {
+    flex: 1;
+    overflow: auto;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    overflow: hidden;
     position: fixed;
     display: flex;
-    background-color: black;;
+    background-color: var(--background-color, black);
     justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+
 }
 
 .flexbox-item {
-    width: 95%;
-    border: 0.1px solid rgb(39, 39, 39);
+    width: 100%;
+  /*   border: 0.1px solid rgb(39, 39, 39); */
     border-radius: 25px;
     padding: 50px;
     align-items: center;
     justify-content: center;
-    display: flex;
+
+}
+
+.wm {
+    width: 40%;
 }
 
 .flexbox-item-1 {
     min-height: 100px;
     margin: 150px 75px 150px 150px;
+    display: relative;
+    overflow: auto;
+    
 
 }
 
@@ -65,4 +136,119 @@ body {
     min-height: 100px;
     margin: 150px 150px 150px 75px;
 
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35%;
+    padding: 50px;
+    font-size: 20px;
+  }
+
+  body {
+      height: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.cent {
+    margin-left: 40%; /* 43% */
+    font-size: 17px;
+}
+
+.mb {
+    margin-bottom: -10px;
+}
+
+
+/* FIX HEAD FOOT 
+.fixed-header, .fixed-footer{
+    margin-top: -100px;
+    margin-left: -100px;
+    margin-right: -100px;
+
+    position: fixed;
+
+    width: 100%;
+    position: fixed;        
+    background: rgb(0, 0, 0);
+    padding: 70px 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.fixed-header{
+    bottom: 0;
+}
+*/
+
+
+
+/* 
+    SCREEN OPTIMIZING FOR BODY ELEMENTS
+
+    Automatic scaling for font size and margins in the text-
+    based program, html and css.
+
+*/
+
+
+/* SCREEN OPTIMIZING */     /*   XSMALL   */
+@media screen and (max-width: 768px) {
+    .cent {
+        margin-left: 5%; /* 43% */
+        font-size: 12px;
+    }
+}
+
+/* SCREEN OPTIMIZING */     /*   SMALL   */
+@media screen and (min-width: 768px) {
+    .cent {
+        margin-left: 10%; /* 43% */
+        font-size: 15px;
+    }
+}
+
+/* SCREEN OPTIMIZING */     /*   MEDIUM   */
+@media screen and (min-width: 1024px) {
+    .cent {
+        margin-left: 20%; /* 43% */
+        font-size: 17px;
+    }
+}
+
+/* SCREEN OPTIMIZING */     /*   LARGE   */
+@media screen and (min-width: 1366px) {
+    .cent {
+        margin-left: 30%; /* 43% */
+        font-size: 17px;
+    }
+}
+
+/* SCREEN OPTIMIZING */     /*   XLARGE   */
+@media screen and (min-width: 1920px) {
+    .cent {
+        margin-left: 35%; /* 43% */
+        font-size: 17px;
+    }
+}
+
+/* SCREEN OPTIMIZING */     /*   XLARGE   */
+@media screen and (min-width: 2440px) {
+    .cent {
+        margin-left: 40%; /* 43% */
+        font-size: 17px;
+    }
 }
