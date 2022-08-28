@@ -1,4 +1,8 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 /*      PRIMARY ATTRIBUTES      */
 
@@ -90,6 +94,38 @@ hr {
     color: #bb6a63;
 }
 
+.navhov {
+    /* color: rgb(175, 175, 175); */
+     color: #ffffff; 
+     text-decoration: none;
+     transition: 0.3s;
+ }
+ .navhov:hover {
+     /*color: #ffb086       #f5978e*/
+     color: #ffb086;
+ }
+
+ .dim {
+    color: #939393; 
+    text-decoration: none;
+    transition: 0.3s;
+ }
+
+
+ 
+/*     SELECTION       */
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  
+  ::selection {
+    color: red;
+    background: yellow;
+  }
+
+
 
 /*      FLEXBOX       */
 
@@ -111,7 +147,7 @@ hr {
 
 .flexbox-item {
     width: 95%;
-  /*    border: 0.1px solid rgb(39, 39, 39); */
+  /*     border: 0.1px solid rgb(39, 39, 39); */
     border-radius: 25px;
     padding: 50px;
     align-items: center;
@@ -124,7 +160,6 @@ hr {
     margin: 100px 0px 50px 50px;  /*   margin: 150px 75px 150px 150px; */ /* 100px 0px 10px 100px */
     display: relative;
     overflow: auto;
-    
 
 }
 
@@ -140,7 +175,7 @@ hr {
 div.sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 35%;
+    top: 25%;
     padding: 50px;
     font-size: 20px;
   }
