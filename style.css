@@ -99,6 +99,7 @@ hr {
      color: #ffffff; 
      text-decoration: none;
      transition: 0.3s;
+ //    font-size: 19px;
  }
  .navhov:hover {
      /*color: #ffb086       #f5978e*/
@@ -127,7 +128,7 @@ hr {
 
 
 
-/*      FLEXBOX       */
+/*      FLEXBOX       */ 
 
 .flexbox-container {
     flex: 1;
