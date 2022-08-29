@@ -1,5 +1,5 @@
-# curo-dev
-Business writing templates.
+# Norsa
+Norsa is a simple platform for businesses, providing a wide variety of company templates, from employee agreements to style guides and strategies.
 <br />
 <br />
 

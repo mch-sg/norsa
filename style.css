@@ -116,13 +116,13 @@ hr {
 /*     SELECTION       */
 
 ::-moz-selection { /* Code for Firefox */
-    color: red;
-    background: yellow;
+    color: black;
+    background: #ffb086;
   }
   
   ::selection {
-    color: red;
-    background: yellow;
+    color: black;
+    background: #ffb086;
   }
 
 
