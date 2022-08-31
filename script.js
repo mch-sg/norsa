@@ -39,3 +39,9 @@ $(".flexbox-item").click(function () {
 $("a").click(function (event) {
     event.stopPropagation();
 });
+
+
+function light() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
