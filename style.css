@@ -135,14 +135,14 @@ hr {
 
 .navhov {
     /* color: rgb(175, 175, 175); */
-     color: #ffffff; 
-     text-decoration: none;
-     transition: 0.3s;
+    color: #FBFAF9;
+    text-decoration: none;
+    transition: 0.3s;
  //    font-size: 19px;
  }
  .navhov:hover {
-     /*color: #ffb086       #f5978e*/
-     color: #EE8869; // 
+    /*color: #ffb086       #f5978e*/
+    color: #EE8869; // 
  }
 
  .dim {
@@ -361,7 +361,7 @@ ul.nav {
 @media screen and (min-width: 1366px) {
     .cent {
         margin-left: 30%; /* 43% */
-        font-size: 17px;
+        font-size: 18px;
     }
 
     ul.nav > li {
@@ -375,7 +375,7 @@ ul.nav {
 @media screen and (min-width: 1920px) {
     .cent {
         margin-left: 35%; /* 43% */
-        font-size: 17px;
+        font-size: 18px;
     }
     
     .text {
@@ -455,7 +455,36 @@ ul.nav {
     
     } 
 
+    
+    .flexbox-item {
+    //    width: 50%; // 95%
+      /*    border: 0.1px solid rgb(39, 39, 39); */
+        border-radius: 25px;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+      //  padding-left: 500px;
+    
+    }
 
+    .flexbox-item-1 {
+        width: 50%;
+        min-height: 100px;
+        margin: 100px 0px 50px 50px;  /*   margin: 150px 75px 150px 150px; */ /* 100px 0px 10px 100px */
+        display: relative;
+        overflow: auto;
+    
+    }
+
+    
+    .flexbox-item-2 {
+        min-height: 100px;
+        margin: 100px 300px;  /* 150px 150px 150px 75px */ /* 125px 175px 0px 125px */
+        display: relative;
+        overflow: auto;
+        width: 50%; 
+    
+    }
 
 }
 
