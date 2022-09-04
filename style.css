@@ -6,7 +6,8 @@
 /*      PRIMARY ATTRIBUTES      */
 
 :root {
-    --div-background-color: black;
+    --background-color: #DC1C1C;
+    background-color: #000000;
 }
 
 .light-mode {
@@ -15,8 +16,8 @@
 }
  
 body {
-    background-color: var(--div-background-color, black);
-    color: white;
+ //   background-color: var(--background-color);
+    color: #FBFAF9;
     font-family: 'Inconsolata', monospace;
 
     margin-top: 100px;
@@ -34,6 +35,13 @@ body {
 
 }
 
+.txt {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-kerning: normal;
+}
+
 
 a {
     color: white;
@@ -48,16 +56,18 @@ h1 {
     letter-spacing: 1px;
 } h2 {
     font-family: 'Inconsolata', monospace;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-transform: uppercase;
 
 } h3 {
     font-family: 'Inconsolata', monospace;
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-indent: 5%;
 }
 
 .head-title {
@@ -100,27 +110,27 @@ hr {
 
 .hlink {
     /* color: rgb(175, 175, 175); */
-     color:  #ffb086; // #f5978e  -  #A9BFC9  - #FFDB86
+     color:  #EE8869; // 
      text-decoration: none;
-     font-weight: 500;
      transition: 0.3s;
      cursor: pointer;
  }
  .hlink:hover {
      /*color: #f5978e;  #929da6*/
-     color: #939393; // #bb6a63   -  #677379  -  #CCAA5B
+     color: #939393; // 
  }
 
 .link {
    /* color: rgb(175, 175, 175); */
-    color:  #ffb086; // #f5978e
+    font-family: 'Inconsolata', monospace;
+    color:  #EE8869; //  #ffb086
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;
 }
 .link:hover {
     /*color: #f5978e;  #929da6*/
-    color: #939393; // #bb6a63  - #B87D5D
+    color: #939393; // 
 }
 
 .navhov {
@@ -132,7 +142,7 @@ hr {
  }
  .navhov:hover {
      /*color: #ffb086       #f5978e*/
-     color: #ffb086; // 
+     color: #EE8869; // 
  }
 
  .dim {
@@ -147,12 +157,12 @@ hr {
 
 ::-moz-selection { /* Code for Firefox */
     color: black;
-    background: #ffb086;
+    background: #EE8869; // #ffb086
   }
   
   ::selection {
     color: black;
-    background: #ffb086;
+    background: #EE8869;
   }
 
 
@@ -168,7 +178,6 @@ hr {
     left: 0;
     position: fixed;
     display: flex;
-    background-color: var(--background-color, black);
     justify-content: center;
     align-items: flex-start;
     overflow: auto;
@@ -267,6 +276,8 @@ ul.nav {
 
   .sublink {
     font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
   }
 
 
@@ -310,7 +321,7 @@ ul.nav {
 
 @media screen and (max-width: 1024px) {
     div {
-        display: inline;
+        display: none;
         color: #000;
         height: 100%;
         width: 100%;
@@ -369,7 +380,7 @@ ul.nav {
     
     .text {
         font-family: 'Inconsolata', monospace;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 1.5;
     }
 
@@ -379,7 +390,7 @@ ul.nav {
       }
 
       .sublink {
-        font-size: 20px;
+        font-size: 21px;
       }
 
     h1 {
@@ -415,12 +426,12 @@ ul.nav {
 
     .text {
         font-family: 'Inconsolata', monospace;
-        font-size: 20px;
+        font-size: 21px;
         line-height: 1.5;
     }
 
     .subhead {
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 400;
       }
 
@@ -443,5 +454,8 @@ ul.nav {
         text-transform: uppercase;
     
     } 
+
+
+
 }
 
