@@ -24,15 +24,22 @@ function dark() {
   var element = document.body;
   element.classList.toggle("dark-theme");
   console.log("test");
-
-  localStorage.setItem("dark-theme", "enabled");
+  
+  var str = "true";
+  localStorage.setItem("dark-theme", str);
 }
 
 let darkMode = localStorage.getItem("dark-theme");
+console.log(parseInt(darkMode));
 
-if (darkMode === "enabled") {
-  dark(); // set state of darkMode on page load
+if (darkMode === str) {
+  console.log("t")
+  // var element = document.body;
+  // element.classList.toggle("dark-theme");
+  dark();
 }
+
+
 
 
 // scrollbar
