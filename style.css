@@ -53,14 +53,25 @@ body {
 
 button {
     float: left;
-    width: 100px;
-    background-color: var(--iconbg);
+    width: 0%; 
+    height: 0%;
+    background-color: red; //var(--iconbg)
     color: var(--txtcol);
     font-size: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: none;
-    margin: 10px;
+    margin-top: 15px;
     cursor: pointer;
+}
+
+.d {
+        background-color: red; //var(--iconbg)
+        color: var(--txtcol);
+        font-size: 20px;
+        /* border-radius: 10px; */
+        border: none;
+        /* margin-top: 15px; */
+        cursor: pointer;
 }
 
 .txt {
@@ -185,6 +196,10 @@ hr {
  }
 
 
+ img:hover {
+    transition: 0.3s;
+    color: var(--bgc); // 
+ }
  
 /*     SELECTION       */
 
