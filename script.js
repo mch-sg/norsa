@@ -19,7 +19,9 @@ $("a").click(function (event) {
 });
 
 
-function light() {
+// dark mode
+function dark() {
   var element = document.body;
-  element.classList.toggle("light-mode");
+  element.classList.toggle("dark-mode");
+  console.log("test");
 }
