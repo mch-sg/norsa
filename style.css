@@ -153,7 +153,7 @@ hr {
     /* color: rgb(175, 175, 175); */
      color: var(--bgc); //  
      text-decoration: none;
-     transition: 0.3s;
+     transition: 0.2s;
      cursor: pointer;
  }
  .hlink:hover {
@@ -170,7 +170,7 @@ hr {
     font-family: 'Inconsolata', monospace;
     color:  var(--bgc); //  #EE8869
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
 }
 .link:hover {
@@ -182,24 +182,24 @@ hr {
     /* color: rgb(175, 175, 175); */
     color: var(--txtcol); // #FBFAF9
     text-decoration: none;
-    /* transition: 0.3s; */
+    /* transition: 0.2s; */
  //    font-size: 19px;
  }
  .navhov:hover {
     /*color: #ffb086       #f5978e*/
-    transition: 0.3s;
+    transition: 0.2s;
     color: var(--bgc); // 
  }
 
  .dim {
     color: var(--dim); 
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.2s;
  }
 
 
  img:hover {
-    transition: 0.3s;
+    transition: 0.2s;
     color: var(--bgc); // 
  }
  
@@ -569,7 +569,7 @@ ul.nav {
 ::-webkit-scrollbar-thumb:vertical:hover,
 ::-webkit-scrollbar-thumb:horizontal:hover {
     background-color: rgb(110, 110, 110);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 ::-webkit-scrollbar-track {
