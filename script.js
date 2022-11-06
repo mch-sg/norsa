@@ -1,22 +1,32 @@
+// const popup = document.querySelector('.popup');
+// const close = document.querySelector('.close');
+
+//    function openPopup() {
+//      window.location.hash = 'openModal'; 
+//     popup.style.display = 'block';  
+//   }
+
+// //  window.onload = openPopup();
+
+// close.addEventListener('click', () => {
+//   popup.style.display = 'none';
+// })
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
 
 
-$(".flexbox-item").click(function () {
-    window.open(
-      'https://www.google.com/',
-      '_blank'
-    );
+window.addEventListener("load", function(){
+  setTimeout(
+      function open(event){
+          document.querySelector(".popup").style.display = "block";
+      },
+      000
+  )
+});
+document.querySelector("#close").addEventListener("click", function(){
+  document.querySelector(".popup").style.display = "none";
 });
 
-$("a").click(function (event) {
-    event.stopPropagation();
-});
 
 
 // dark mode
@@ -30,15 +40,13 @@ function dark() {
 }
 
 let darkMode = localStorage.getItem("dark-theme");
-console.log(parseInt(darkMode));
 
 if (darkMode === str) {
   console.log("t")
-  // var element = document.body;
-  // element.classList.toggle("dark-theme");
-  dark();
+   var element = document.body;
+   element.classList.toggle("dark-theme");
+  // dark();
 }
-
 
 
 
@@ -54,3 +62,16 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   }
 }); 
 
+
+
+
+
+
+let buttons = document.querySelectorAll('.navhov');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+  });
+});

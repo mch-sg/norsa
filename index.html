@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <title>Norsa</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/norsa/style.css?v=1">
+    <script src="/norsa/script.js"></script>
     <script src="jquery-3.6.1.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,15 +36,33 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head> 
-<body>
+<body  data-spy="scroll" data-target=".scrollbud" data-offset="50">
 
-    <div class="fixed-header"> </div>
 
-    <div class="flexbox-container">
+    <!-- <div class="popup">
+        <button id="close">&times;</button>
+        <h2>This Is The Title</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+        </p>
+        <a href="#">Let's Go</a>
+    </div> -->
+
+
+
+    <div class="fixed-header"></div>
+
+    <div class="flexbox-container sticky2">
    
-        <div class="flexbox-item flexbox-item-1 sticky sg">
-            <div class="cent"><a class="navhov" href="#section1">1.0.  Getting started</a><br></div>
+        <div class="flexbox-item flexbox-item-1 sticky sticky2 sg scrollbud" id="nav">
+            <div class="cent"><a class="navhov" href="/norsa/">Home</a><br></div>
+            <div class="cent"><a class="navhov" href="#section1"><br><br>1.0.  Getting started</a><br></div>
             <div class="cent "><a class="navhov" href="#section2"><br><br>2.0.  Introduction</a><br></div>
             <!-- <div class="cent mb"><a class="navhov" href="#section2-1"><br>⠀⠀⠀⠀2.1. Help</a><br></div> -->
             <div class="cent mb"><a class="navhov" href="#section3"><br><br>3.0. Business Strategy</a><br></div>
@@ -55,15 +75,13 @@
             <div class="cent mb"><a class="navhov" href="#section4"><br><br>4.0. Financial</a><br></div>
 
 
-            <div class="cent"><a class="navhov dim" href="#sectionH"><br><br><br><br>Help me</a></div>
+            <div class="cent"><a class="navhov dim"  href="/norsa/helpme/"><br><br><br><br>Help me</a></div>
             <div class="cent"><a class="navhov dim" href="#sectionA"><br>About<br></a><br></div>
             <div class="cent pleek"><img class="bi bi-moon d dim pleek"src="" height ="0" width="0" onclick="dark()" /><a href="https://github.com/mch-sg" target="_blank" style="display:contents;" ><img class="bi bi-bookmark-heart-fill d dim" src="" style="margin-left: 35px;" height ="0" width="0"/></a></div>
 
-        </div> 
+        </div>  
 
-        <!-- <div class="top ss"><button onclick="dark()"><img class="bi bi-moon" src="" height ="0" width="0" /></button></div> -->
-
-        <div class="flexbox-item flexbox-item-2 text">
+        <div class="flexbox-item flexbox-item-2 text" data-bs-spy="scroll" data-bs-target=".scrollbud" data-bs-offset="0" class="scrollspy-example">
             <div id="section1" class="txt">
             <h1>Welcome to Norsa!</h1>
             <h1 class="mb dim subhead">Norsa is a simple website for businesses, providing a wide variety of company templates, 
@@ -87,11 +105,11 @@
             interdum ut hendrerit risus congue. 
 
 
-            <br><br>
-            <hr/>
             <br><br><br>
+            <hr/>
+            <br>
         </div>
-        <div id="section2" class="txt">
+        <div id="section2" class="txt scrollspy">
            <h2 class="mb">  2.0.⠀⠀Introduction</h2> <br>
 
            <a class="head-title">Whatever you do, don't quit.</a>
@@ -136,15 +154,15 @@
             Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
             nulla et dictum interdum, nisi lorem egestas odio,
 
-            <br><br>
-            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frevisionpath.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fkiller-clauses-for-contract.jpg&f=1&nofb=1" alt="Contract"  width="100%" height="auto">
+            <!-- <br><br>
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frevisionpath.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fkiller-clauses-for-contract.jpg&f=1&nofb=1" alt="Contract"  width="100%" height="auto"> -->
 
 
-            <br><br>
+            <br><br><br>
             <hr/>
-            <br><br>
+            <br>
         </div>
-        <div id="section3" class="txt">
+        <div id="section3" class="txt scrollspy">
             <h2 class="mb">3.0.⠀⠀Business strategy </h2> <br>
 
             <a class="head-title">Business strategies make the best tea.</a>
@@ -173,7 +191,7 @@
             <br>
             <br><br><br>
         </div>
-        <div id="section3-1" class="txt">
+        <div id="section3-1" class="txt scrollspy">
             <h3 class="mb">3.1.⠀⠀Executive Summary </h3>
 
             <br>
@@ -196,7 +214,7 @@
             <br>
             <br><br><br>
         </div>
-        <div id="section3-2" class="txt">
+        <div id="section3-2" class="txt scrollspy ">
             <h3 class="mb">3.2.⠀⠀Products & Services </h3>
 
             <br>
@@ -222,7 +240,7 @@
             <br>
             <br><br><br>
             </div>
-            <div id="section3-3" class="txt">
+            <div id="section3-3" class="txt scrollspy">
                 <h3 class="mb">3.3.⠀⠀Market Analysis </h3>
     
                 <br>
@@ -242,7 +260,7 @@
                 <br><br><br>
             </div>
 
-            <div id="section3-4" class="txt">
+            <div id="section3-4" class="txt scrollspy">
                 <h3 class="mb"> 3.4.⠀⠀Marketing & Sales </h3>
     
                 <br>
@@ -265,8 +283,8 @@
         </div>
 
 
-        <div id="section3-5" class="txt">
-            <h3 class="mb">3.5.⠀⠀Company organization </h3>
+        <div id="section3-5" class="txt scrollspy">
+            <h3 class="mb">3.5.⠀⠀Company organization </h3> <!-- ⠀⠀-->
 
             <br>
             <br>
@@ -297,7 +315,7 @@
 
 
 
-        <div id="section3-6" class="txt">
+        <div id="section3-6" class="txt scrollspy">
         <h3 class="mb">3.6.⠀⠀Financial Projections </h3>
 
         <br>
@@ -315,13 +333,13 @@
     Three-year projections are typically adequate, but some investors will request a five-year forecast.
    
     
-            <br><br>
-            <hr/>
-            <br><br>
+    <br><br><br>
+    <hr/>
+    <br>
         </div>
 
 
-        <div id="section4" class="txt">
+        <div id="section4" class="txt scrollspy">
             <h2 class="mb"> 4.0.⠀⠀Financial </h2> <br>
 
             <a class="head-title">Whatever you do, don't quit.</a>
@@ -363,7 +381,7 @@
         </div>
 
 
-        <div id="sectionH" class="txt">
+        <div id="sectionH" class="txt scrollspy">
             <h2 class="mb">Help me </h2> <br>
 
             <a class="head-title">Not sure what this is?</a><br>
@@ -405,6 +423,9 @@
     </div>
 
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 
     
 </body>
