@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,38 +34,15 @@
 	<meta property="og:type" content="website">
 
     <link href="https://i.imgur.com/93xMaAY.png" rel="shortcut icon">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-
-    <link href="/dist/output.css" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 </head> 
+
 <body  data-spy="scroll" data-target=".scrollbud" data-offset="50">
 
-
-    <!-- <div class="popup">
-        <button id="close">&times;</button>
-        <h2>This Is The Title</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
-        </p>
-        <a href="#">Let's Go</a>
-    </div> -->
-
-
-
-    <div class="fixed-header"></div>
-
     <div class="flexbox-container sticky2">
-   
-        <div class="flexbox-item flexbox-item-1 sticky sticky2 sg scrollbud" id="nav">
+        <div class="flexbox-item flexbox-item-1 sticky sticky2 sg scrollbud scrollspy" id="nav">
             <div class="cent"><a class="navhov" href="/norsa/">Home</a><br></div>
             <div class="cent"><a class="navhov" href="#section1"><br><br>1.0.  Getting started</a><br></div>
             <div class="cent "><a class="navhov" href="#section2"><br><br>2.0.  Introduction</a><br></div>
-            <!-- <div class="cent mb"><a class="navhov" href="#section2-1"><br>⠀⠀⠀⠀2.1. Help</a><br></div> -->
             <div class="cent mb"><a class="navhov" href="#section3"><br><br>3.0. Business Strategy</a><br></div>
             <div class="cent mb"><a class="navhov" href="#section3-1"><br>⠀⠀⠀⠀3.1. Executive Summary</a><br></div>
             <div class="cent mb"><a class="navhov" href="#section3-2"><br>⠀⠀⠀⠀3.2. Products & Services</a><br></div>
@@ -74,18 +52,17 @@
             <div class="cent mb"><a class="navhov" href="#section3-6"><br>⠀⠀⠀⠀3.6. Financial Projections</a><br></div>
             <div class="cent mb"><a class="navhov" href="#section4"><br><br>4.0. Financial</a><br></div>
 
-
             <div class="cent"><a class="navhov dim"  href="/norsa/helpme/"><br><br><br><br>Help me</a></div>
             <div class="cent"><a class="navhov dim" href="#sectionA"><br>About<br></a><br></div>
-            <div class="cent pleek"><img class="bi bi-moon d dim pleek"src="" height ="0" width="0" onclick="dark()" /><a href="https://github.com/mch-sg" target="_blank" style="display:contents;" ><img class="bi bi-bookmark-heart-fill d dim" src="" style="margin-left: 35px;" height ="0" width="0"/></a></div>
-
-        </div>  
+            <div class="cent pleek"><img class="bi bi-moon d dim pleek"src="" height ="0" width="0" onclick="dark()"/><a href="https://github.com/mch-sg" target="_blank" style="display:contents;">
+                <img class="bi bi-bookmark-heart-fill d dim" src="" style="margin-left: 35px;" height ="0" width="0"/></a></div>
+        </div>
 
         <div class="flexbox-item flexbox-item-2 text" data-bs-spy="scroll" data-bs-target=".scrollbud" data-bs-offset="0" class="scrollspy-example">
             <div id="section1" class="txt">
             <h1>Welcome to Norsa!</h1>
             <h1 class="mb dim subhead">Norsa is a simple website for businesses, providing a wide variety of company templates, 
-                from employee agreements to style guides and strategies.</h1><br>
+            from employee agreements to style guides and strategies.</h1><br>
 
             <a class="hlink sublink"  href="https://www.google.com/" target="_blank">🡢 Join today!</a><br><br><br> <!--class="hlink"-->
 
@@ -104,15 +81,14 @@
             vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus 
             interdum ut hendrerit risus congue. 
 
-
             <br><br><br>
             <hr/>
             <br>
         </div>
-        <div id="section2" class="txt scrollspy">
-           <h2 class="mb">  2.0.⠀⠀Introduction</h2> <br>
+        <div id="section2" class="txt section scrollspy">
+            <h2 class="mb">  2.0.⠀⠀Introduction</h2> <br>
 
-           <a class="head-title">Whatever you do, don't quit.</a>
+            <a class="head-title">Whatever you do, don't quit.</a>
 
             <br><br><br>
 
@@ -125,12 +101,10 @@
             <a class="link" href="/assets/Business-strategy.pdf" target="_blank">🡢 Business strategy</a><br>
             <a class="link" href="/assets/The_Brand_Guide.pdf" target="_blank">🡢 Download 'The Brand Guide'</a>
     
-    <!--
-        <ul class="nav">
+            <!--  <ul class="nav">
             <li><a class="link" href="/assets/Marketing-plan.pdf" target="_blank">🡢 Marketing Plan</a></li>
             <li><a class="link" href="/assets/The_Brand_Guide.pdf" target="_blank">🡢 Download 'The Brand Guide'</a></li>
-          </ul>
-    -->
+            </ul>   -->
     
             <br><br>
 
@@ -155,30 +129,31 @@
             nulla et dictum interdum, nisi lorem egestas odio,
 
             <!-- <br><br>
-            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frevisionpath.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fkiller-clauses-for-contract.jpg&f=1&nofb=1" alt="Contract"  width="100%" height="auto"> -->
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frevisionpath.com%2Fwp-content%2Fuploads%2F2014%2F10%2Fkiller-clauses-for-contract.jpg&f=1&nofb=1" 
+            alt="Contract"  width="100%" height="auto"> -->
 
 
             <br><br><br>
             <hr/>
             <br>
         </div>
-        <div id="section3" class="txt scrollspy">
+        <div id="section3" class="txt section scrollspy">
             <h2 class="mb">3.0.⠀⠀Business strategy </h2> <br>
 
             <a class="head-title">Business strategies make the best tea.</a>
- 
-             <br><br><br>
-            
-             A business plan is a document that describes your business, the products and services you sell, 
-             and the customers that you sell to. It explains your business strategy. How you’re going to build and grow your business, 
-             what your marketing strategy is, and who your competitors are. 
 
-             <br><br>
-             Now, a business plan can be far more than just a static document that you write once and forget about. 
-             It’s also a guide that helps you outline and achieve your goals. 
-             A management tool to analyze results, make strategic decisions, and showcase how your business will operate and grow. 
-             In short, if you’re thinking of starting a business or plan to pitch to investors or venture capitalists, 
-             writing a business plan can improve your chances of success. Download the business strategy here:
+            <br><br><br>
+            
+            A business plan is a document that describes your business, the products and services you sell, 
+            and the customers that you sell to. It explains your business strategy. How you’re going to build and grow your business, 
+            what your marketing strategy is, and who your competitors are. 
+
+            <br><br>
+            Now, a business plan can be far more than just a static document that you write once and forget about. 
+            It’s also a guide that helps you outline and achieve your goals. 
+            A management tool to analyze results, make strategic decisions, and showcase how your business will operate and grow. 
+            In short, if you’re thinking of starting a business or plan to pitch to investors or venture capitalists, 
+            writing a business plan can improve your chances of success. Download the business strategy here:
             <br>
             <br>
 
@@ -191,30 +166,30 @@
             <br>
             <br><br><br>
         </div>
-        <div id="section3-1" class="txt scrollspy">
+        <div id="section3-1" class="txt section scrollspy">
             <h3 class="mb">3.1.⠀⠀Executive Summary </h3>
 
             <br>
             <br>
 
-             The executive summary is an overview of your business and your plans. 
-             It comes first in your plan and is ideally only one to two pages. Most people write it last, though. 
-             <br><br>
-             Ideally, the executive summary can act as a stand-alone document that covers the highlights of your detailed plan. 
-             In fact, it’s very common for investors to ask for only the executive summary when they are evaluating your business. 
-             If they like what they see in the executive summary, they’ll often follow up with a request for a complete plan, 
-             a pitch presentation, and more in-depth financials.
-             
-             Your executive summary should include a summary of the problem you are solving, 
-             a description of your product or service, an overview of your target market, a brief description of your team, 
-             a summary of your financials, and your funding requirements (if you are raising money).
-             
-             Learn more about writing an effective executive summary.
+            The executive summary is an overview of your business and your plans. 
+            It comes first in your plan and is ideally only one to two pages. Most people write it last, though. 
+            <br><br>
+            Ideally, the executive summary can act as a stand-alone document that covers the highlights of your detailed plan. 
+            In fact, it’s very common for investors to ask for only the executive summary when they are evaluating your business. 
+            If they like what they see in the executive summary, they’ll often follow up with a request for a complete plan, 
+            a pitch presentation, and more in-depth financials.
+            
+            Your executive summary should include a summary of the problem you are solving, 
+            a description of your product or service, an overview of your target market, a brief description of your team, 
+            a summary of your financials, and your funding requirements (if you are raising money).
+            
+            Learn more about writing an effective executive summary.
 
             <br>
             <br><br><br>
         </div>
-        <div id="section3-2" class="txt scrollspy ">
+        <div id="section3-2" class="txt section scrollspy ">
             <h3 class="mb">3.2.⠀⠀Products & Services </h3>
 
             <br>
@@ -239,51 +214,48 @@
             
             <br>
             <br><br><br>
-            </div>
-            <div id="section3-3" class="txt scrollspy">
-                <h3 class="mb">3.3.⠀⠀Market Analysis </h3>
-    
-                <br>
-                <br>
-
-                 This section is where you will showcase all of the information about your potential customers. 
-                 You’ll cover your target market as well as information about the growth of your market and your industry.
-                 
-                 First, describe your target market. Your target market is the group of people that you plan on selling to. 
-                 Try to be as specific as possible. With a solid target market, it will be easier to create a sales and marketing plan that will reach your customers.
-                 
-                 Next, provide any market analysis and market research that you have. 
-                 You’ll want to explain how your market is growing over time and also explain how your business is positioned to take 
-                 advantage of expected changes in your industry.
-            
-                <br>
-                <br><br><br>
-            </div>
-
-            <div id="section3-4" class="txt scrollspy">
-                <h3 class="mb"> 3.4.⠀⠀Marketing & Sales </h3>
-    
-                <br>
-                <br>
-    
-                The marketing and sales plan section of your business plan details how you plan to reach your target market segments, 
-                how you plan on selling to those target markets, what your pricing plan is, and what types of activities and partnerships 
-                you need to make your business a success.
-                 <br><br>
-                Some businesses that distribute their products and reach their customers through stores like Amazon.com, Walmart, 
-                Target, grocery store chains, and other retail outlets should review how this part of their business works. 
-                he plan should discuss the logistics and costs of getting products onto store shelves and any potential hurdles 
-                that the business may have to overcome.
-                 
-                The marketing & sales chapter of your business plan can also be a good place to include a SWOT analysis. 
-                This is purely optional but can be a good way to explain how your products and services are positioned to deal 
-                with competitive threats and take advantage of opportunities.
-                 <br>
-                 <br><br><br>     
         </div>
+        <div id="section3-3" class="txt section scrollspy">
+            <h3 class="mb">3.3.⠀⠀Market Analysis </h3>
 
+            <br>
+            <br>
 
-        <div id="section3-5" class="txt scrollspy">
+                This section is where you will showcase all of the information about your potential customers. 
+                You’ll cover your target market as well as information about the growth of your market and your industry.
+                
+                First, describe your target market. Your target market is the group of people that you plan on selling to. 
+                Try to be as specific as possible. With a solid target market, it will be easier to create a sales and marketing plan that will reach your customers.
+                
+                Next, provide any market analysis and market research that you have. 
+                You’ll want to explain how your market is growing over time and also explain how your business is positioned to take 
+                advantage of expected changes in your industry.
+        
+            <br>
+            <br><br><br>
+        </div>
+        <div id="section3-4" class="txt section scrollspy">
+            <h3 class="mb"> 3.4.⠀⠀Marketing & Sales </h3>
+
+            <br>
+            <br>
+
+            The marketing and sales plan section of your business plan details how you plan to reach your target market segments, 
+            how you plan on selling to those target markets, what your pricing plan is, and what types of activities and partnerships 
+            you need to make your business a success.
+                <br><br>
+            Some businesses that distribute their products and reach their customers through stores like Amazon.com, Walmart, 
+            Target, grocery store chains, and other retail outlets should review how this part of their business works. 
+            he plan should discuss the logistics and costs of getting products onto store shelves and any potential hurdles 
+            that the business may have to overcome.
+                
+            The marketing & sales chapter of your business plan can also be a good place to include a SWOT analysis. 
+            This is purely optional but can be a good way to explain how your products and services are positioned to deal 
+            with competitive threats and take advantage of opportunities.
+                <br>
+                <br><br><br>     
+        </div>
+        <div id="section3-5" class="txt section scrollspy">
             <h3 class="mb">3.5.⠀⠀Company organization </h3> <!-- ⠀⠀-->
 
             <br>
@@ -312,39 +284,36 @@
             <br>
             <br><br><br>  
         </div>
+        <div id="section3-6" class="txt section scrollspy">
+            <h3 class="mb">3.6.⠀⠀Financial Projections </h3>
+
+            <br>
+            <br>
 
 
-
-        <div id="section3-6" class="txt scrollspy">
-        <h3 class="mb">3.6.⠀⠀Financial Projections </h3>
-
-        <br>
-        <br>
-
-
-    Last, but certainly not least, is your financial plan chapter. This is often what entrepreneurs find most daunting, 
-    but it doesn’t have to be as intimidating as it seems. Business financials for most startups are less complicated than you think, 
-    and a business degree is certainly not required to build a solid financial forecast. That said, if you need additional help, 
-    there are plenty of tools and resources out there to help you build a solid financial plan.
-    <br><br>
-    A typical financial plan will include:
-    
-    A monthly sales and revenue forecast for the first 12 months, and then annual projections for the remaining three to five years. 
-    Three-year projections are typically adequate, but some investors will request a five-year forecast.
-   
-    
-    <br><br><br>
-    <hr/>
-    <br>
+            Last, but certainly not least, is your financial plan chapter. This is often what entrepreneurs find most daunting, 
+            but it doesn’t have to be as intimidating as it seems. Business financials for most startups are less complicated than you think, 
+            and a business degree is certainly not required to build a solid financial forecast. That said, if you need additional help, 
+            there are plenty of tools and resources out there to help you build a solid financial plan.
+            
+            <br><br>
+            
+            A typical financial plan will include:
+            
+            A monthly sales and revenue forecast for the first 12 months, and then annual projections for the remaining three to five years. 
+            Three-year projections are typically adequate, but some investors will request a five-year forecast.
+        
+            
+            <br><br><br>
+            <hr/>
+            <br>
         </div>
-
-
-        <div id="section4" class="txt scrollspy">
+        <div id="section4" class="txt section scrollspy">
             <h2 class="mb"> 4.0.⠀⠀Financial </h2> <br>
 
             <a class="head-title">Whatever you do, don't quit.</a>
- 
-             <br><br><br>
+
+            <br><br><br>
 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, 
             vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus 
@@ -380,8 +349,7 @@
             <br><br>
         </div>
 
-
-        <div id="sectionH" class="txt scrollspy">
+        <div id="sectionH" class="txt section scrollspy">
             <h2 class="mb">Help me </h2> <br>
 
             <a class="head-title">Not sure what this is?</a><br>
@@ -396,7 +364,8 @@
             <hr/>
             <br><br>
         </div>
-        <div id="sectionA">
+
+        <div id="sectionA" class="txt section scrollspy">
             <h2 class="mb">About </h2>
 
             <br>
@@ -420,13 +389,13 @@
 
             <br><br>
             <hr/>
+        </div>
     </div>
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
 </body>
 </html>
